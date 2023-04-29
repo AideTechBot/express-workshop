@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
   const userEntry = getUserEntryById(id);
   if (userEntry && id) {
     userEntry.session = req?.session;
-    res.send(`Welcome ${id}! <a href='/logout'>click to logout</a>`);
+    res.send(`Welcome ${id}! Here is your data: ${userEntry.data} <a href='/logout'>click to logout</a>`);
   } else {
     res.sendFile('front-end/index.html', { root: __dirname });
   }

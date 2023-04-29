@@ -6,12 +6,12 @@ export type UserEntry = {
 
 const _database: Record<string, UserEntry> = {
   manuel: {
-    password: 'asdf',
+    password: 'notmanuel',
     data: 'some data',
   } as UserEntry,
   daniel: {
     password: 'notdaniel',
-    data: 'some data',
+    data: 'some different data',
   } as UserEntry,
 };
 
